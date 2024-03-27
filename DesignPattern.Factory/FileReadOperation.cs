@@ -1,13 +1,12 @@
 namespace DesignPattern.Factory;
-
-using System.Io;
+using System;
 
 public class FileReadOperation : IFileOperation
 {
     public void Execute(string filePath)
 {
 
-    string content = File.ReadAllText(filePath)
+    string content = File.ReadAllText(filePath);
     Console.WriteLine(content);
 }
 }
